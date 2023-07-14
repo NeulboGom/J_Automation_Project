@@ -1,0 +1,18 @@
+1. LF 에러 처리
+
+git config --global core.autocrlf True
+
+
+
+2. git branch 설정 
+바로 master에 올리지 않고 branch 생성 후 올리기 
+
+git branch JH    # JH라는 브랜치 생성
+git checkout JH   # JH 브랜치로 이동
+git push origin JH   # 원격 저장소에 JH 브랜치 추가
+
+
+3. 브랜치에서 수정하고 master branch에서 pull, JH 브랜치에 push
+
+git pull origin master   # master 브랜치 변경 내역 가져오기
+git push origin JH   # JH 브랜치에 추가
